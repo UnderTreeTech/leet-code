@@ -6,9 +6,9 @@ func RemoveSortedDupElements(nums []int) int {
 		return 0
 	}
 
-	var dup,gap int
+	var dup, gap int
 	pivot := nums[0]
-	for i:=1; i<size;i++ {
+	for i := 1; i < size; i++ {
 		if pivot == nums[i] {
 			dup++
 			gap++
@@ -16,7 +16,7 @@ func RemoveSortedDupElements(nums []int) int {
 		}
 
 		pivot = nums[i]
-		if gap >0 {
+		if gap > 0 {
 			nums[i-gap] = nums[i]
 		}
 	}
