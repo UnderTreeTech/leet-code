@@ -1,5 +1,7 @@
 package array
 
+// 删除有序数组中重复元素
+// 非有序数组可以先排序，排序算法
 func RemoveSortedDupElements(nums []int) int {
 	size := len(nums)
 	if size == 0 {
